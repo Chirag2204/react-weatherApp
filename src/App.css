@@ -1,0 +1,120 @@
+.App {
+  text-align: center;
+}
+
+.card{
+  width: 70%;
+  height: 70%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 1%;
+  background-size: cover;
+  padding: 20px;
+  box-shadow: 5px 5px 5px 5px #e8cebe;
+}
+
+.title{
+  color:darkgoldenrod;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.search-form{
+  width: 90%;
+  height: suto;
+  padding: 5px;
+  margin:auto;
+  border-radius: 10px;
+}
+
+.search-form button{
+  height: 40px;
+  width: 100px;
+  padding: 5px;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 0;
+  border: 1px solid black;
+  border-radius: 10px;
+  background: -o-linear-gradient(45deg,black,white);
+  font-weight: 800;
+  font-size: 18px;
+  color:darkgoldenrod;
+}
+
+.search-form input{
+  height:40px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.main-container{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.main-container h1{
+  font-weight: 800;
+  font-size: 25px;
+  color:#a5b32b
+}
+
+.main-container .weather-icon img{
+  height:100px;
+  height:100px;
+  animation :iconanimation 3s infinite;
+}
+
+@keyframes iconanimation {
+   from{
+    transform:scale(0.5,0.5);
+  }to{
+    transform:scale(1,1);
+  } 
+  
+}
+
+@media only screen and(max-width : 600px){
+  .search-form input{
+    width:70%;
+  }
+  .search-form button{
+    width:25%;
+  }
+}
+
+@media only screen and(min-width : 768px){
+  .search-form input{
+    width:80%;
+  }
+  .search-form button{
+    width:18%;
+  }
+}
+
+.loaction h3 i{
+   margin-right: 15px;
+   
+   animation:locationanimation 2s infinite;
+   
+}
+
+@keyframes locationanimation{
+  
+  0%{
+    transform: rotateY(0deg)Y
+  }
+  
+   50%{
+      transform:rotateY(180deg);
+  }
+   100%{
+    transform: rotateY(360deg);
+   }
+  }
